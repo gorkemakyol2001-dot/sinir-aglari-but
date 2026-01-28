@@ -242,9 +242,6 @@ Model, test seti üzerinde aşağıdaki performans metriklerini elde etmiştir:
 
 > **DİKKAT:** Bu sistem bir karar destek aracıdır ve kesin tanı koyamaz. Elde edilen sonuçlar mutlaka bir göz hekimi tarafından değerlendirilmelidir.
 
-## 📝 Lisans
-
-Bu proje MIT lisansı altında lisanslanmıştır.
 
 ## 👥 Katkıda Bulunma
 
@@ -254,8 +251,6 @@ Katkılarınızı bekliyoruz! Lütfen:
 3. Commit yapın (`git commit -m 'Add amazing feature'`)
 4. Push edin (`git push origin feature/amazing-feature`)
 5. Pull Request açın
-
-## 📧 İletişim
 
 Sorularınız için issue açabilirsiniz.
 
