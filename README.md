@@ -10,8 +10,7 @@ Fundus kamera görüntülerinden yapay zeka destekli göz hastalığı tespiti y
 ## 🎬 Demo
 
 <div align="center">
-  <img src="results/demo_screenshot.png" alt="Web Arayüzü" width="800"/>
-  <p><i>Modern ve kullanıcı dostu web arayüzü</i></p>
+ 
 </div>
 
 ### 🌟 Öne Çıkan Özellikler
