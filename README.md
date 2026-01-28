@@ -1,5 +1,7 @@
 # 🏥 Göz Hastalığı Karar Destek Sistemi
 
+> **CNN-based eye disease decision support system with dataset**
+
 Fundus kamera görüntülerinden yapay zeka destekli göz hastalığı tespiti yapan derin öğrenme tabanlı karar destek sistemi.
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
@@ -7,13 +9,23 @@ Fundus kamera görüntülerinden yapay zeka destekli göz hastalığı tespiti y
 ![Flask](https://img.shields.io/badge/Flask-2.3+-green.svg)
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-## 🎬 Demo
+## 📊 Repository Bilgileri
 
-<div align="center">
- 
-</div>
+| Özellik | Değer |
+|---------|-------|
+| ⭐ **Stars** | 0 |
+| 🔱 **Forks** | 0 |
+| 👁️ **Watching** | 0 |
+| 📦 **Releases** | No releases published |
+| 📦 **Packages** | No packages published |
 
-### 🌟 Öne Çıkan Özellikler
+### 💻 Kullanılan Diller
+- **Python** 83.3%
+- **CSS** 11.2%
+- **HTML** 1.7%
+- **JavaScript** 3.8%
+
+## 🌟 Öne Çıkan Özellikler
 
 | Özellik | Açıklama |
 |---------|----------|
