@@ -38,11 +38,12 @@ saved_model/
 static/uploads/*
 !static/uploads/.gitkeep
 
-# Results
-results/*.png
-results/*.jpg
+# Results - Allow PNG images for GitHub display
+# results/*.png  # Commented out to allow visualization images
+# results/*.jpg  # Commented out to allow visualization images
 results/*.txt
 results/*.csv
+
 
 # IDE
 .vscode/
