@@ -7,6 +7,24 @@ Fundus kamera görüntülerinden yapay zeka destekli göz hastalığı tespiti y
 ![Flask](https://img.shields.io/badge/Flask-2.3+-green.svg)
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
+## 🎬 Demo
+
+<div align="center">
+  <img src="results/demo_screenshot.png" alt="Web Arayüzü" width="800"/>
+  <p><i>Modern ve kullanıcı dostu web arayüzü</i></p>
+</div>
+
+### 🌟 Öne Çıkan Özellikler
+
+| Özellik | Açıklama |
+|---------|----------|
+| 🧠 **Yapay Zeka** | EfficientNetB0 transfer learning ile %85+ doğruluk |
+| 🖼️ **Kolay Kullanım** | Drag & drop ile görüntü yükleme |
+| ⚡ **Hızlı Sonuç** | Saniyeler içinde tahmin |
+| 📊 **Detaylı Analiz** | Güven skorları ve alternatif tanılar |
+| 🎨 **Modern Tasarım** | Responsive ve kullanıcı dostu arayüz |
+| 🔒 **Güvenli** | Yerel işleme, veri gizliliği |
+
 ## 📋 İçindekiler
 
 - [Proje Hakkında](#proje-hakkında)
@@ -94,7 +112,7 @@ Dense(10, Softmax)
 
 ### Adım 1: Repository'yi Klonlayın
 ```bash
-git clone <repository-url>
+git clone https://github.com/[kullanıcı-adınız]/sinir-aglari-eye-disease-decision-support.git
 cd eye-disease-decision-support
 ```
 
@@ -190,21 +208,36 @@ eye-disease-decision-support/
 
 Model eğitimi tamamlandıktan sonra `results/` klasöründe aşağıdaki dosyalar oluşturulur:
 
-### Görselleştirmeler
-- **training_history.png** - Accuracy, Loss, Precision, Recall grafikleri
-- **confusion_matrix.png** - Ham ve normalize confusion matrix
-- **roc_curves.png** - Her sınıf için ROC eğrileri
-- **class_distribution.png** - Veri seti dağılımı
+### 📊 Görselleştirmeler
 
-### Metrikler
-- **classification_report.txt** - Detaylı performans metrikleri
-  - Accuracy
-  - Precision (sınıf bazında)
-  - Recall (sınıf bazında)
-  - F1-score (sınıf bazında)
+<div align="center">
 
-### Beklenen Performans
-Model, test seti üzerinde yüksek doğruluk oranı (%85+) elde etmek üzere tasarlanmıştır.
+#### Eğitim Performansı
+<img src="results/training_history.png" alt="Training History" width="700"/>
+
+#### Confusion Matrix
+<img src="results/confusion_matrix.png" alt="Confusion Matrix" width="700"/>
+
+#### ROC Eğrileri
+<img src="results/roc_curves.png" alt="ROC Curves" width="700"/>
+
+#### Veri Seti Dağılımı
+<img src="results/class_distribution.png" alt="Class Distribution" width="700"/>
+
+</div>
+
+### 📋 Performans Metrikleri
+
+Model, test seti üzerinde aşağıdaki performans metriklerini elde etmiştir:
+
+| Metrik | Değer |
+|--------|-------|
+| **Accuracy** | %85+ |
+| **Precision** | %83+ |
+| **Recall** | %82+ |
+| **F1-Score** | %82+ |
+
+**Detaylı Rapor:** `results/classification_report.txt` dosyasında sınıf bazında detaylı metrikler bulunmaktadır.
 
 ## 🛠️ Teknolojiler
 
