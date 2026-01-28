@@ -224,16 +224,16 @@ Model eğitimi tamamlandıktan sonra `results/` klasöründe aşağıdaki dosyal
 <div align="center">
 
 #### Eğitim Performansı
-<img src="eye-disease-decision-support/results/training_history.png" alt="Training History" width="700"/>
+<img src="results/training_history.png" alt="Training History" width="700"/>
 
 #### Confusion Matrix
-<img src="eye-disease-decision-support/results/confusion_matrix.png" alt="Confusion Matrix" width="700"/>
+<img src="results/confusion_matrix.png" alt="Confusion Matrix" width="700"/>
 
 #### ROC Eğrileri
-<img src="eye-disease-decision-support/results/roc_curves.png" alt="ROC Curves" width="700"/>
+<img src="results/roc_curves.png" alt="ROC Curves" width="700"/>
 
 #### Veri Seti Dağılımı
-<img src="eye-disease-decision-support/results/class_distribution.png" alt="Class Distribution" width="700"/>
+<img src="results/class_distribution.png" alt="Class Distribution" width="700"/>
 
 </div>
 
