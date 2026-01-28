@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Göz Hastalığı Karar Destek Sistemi</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="title">🏥 Göz Hastalığı Karar Destek Sistemi</h1>
+                <p class="subtitle">Fundus Görüntülerinden Yapay Zeka Destekli Hastalık Tespiti</p>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Upload Section -->
+            <section class="upload-section">
+                <div class="card">
+                    <h2 class="card-title">📸 Fundus Görüntüsü Yükleyin</h2>
+                    <p class="card-description">
+                        Analiz edilmesi için bir fundus kamera görüntüsü yükleyin. 
+                        Desteklenen formatlar: JPG, PNG, JPEG
+                    </p>
+                    
+                    <div class="upload-area" id="uploadArea">
+                        <div class="upload-icon">📁</div>
+                        <p class="upload-text">Görüntüyü buraya sürükleyin veya tıklayın</p>
+                        <input type="file" id="fileInput" accept="image/jpeg,image/jpg,image/png" hidden>
+                    </div>
+
+                    <div class="image-preview" id="imagePreview" style="display: none;">
+                        <img id="previewImg" src="" alt="Preview">
+                        <button class="btn-remove" id="removeBtn">✕ Kaldır</button>
+                    </div>
+
+                    <button class="btn-predict" id="predictBtn" disabled>
+                        <span class="btn-text">🔍 Tahmin Et</span>
+                        <span class="btn-loader" style="display: none;">⏳ Analiz ediliyor...</span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Results Section -->
+            <section class="results-section" id="resultsSection" style="display: none;">
+                <div class="card">
+                    <h2 class="card-title">📊 Tahmin Sonuçları</h2>
+                    
+                    <div class="result-main">
+                        <div class="result-disease">
+                            <span class="result-label">Tespit Edilen Durum:</span>
+                            <h3 class="disease-name" id="diseaseName">-</h3>
+                        </div>
+                        
+                        <div class="confidence-container">
+                            <div class="confidence-label">
+                                <span>Güven Skoru:</span>
+                                <span class="confidence-value" id="confidenceValue">0%</span>
+                            </div>
+                            <div class="confidence-bar">
+                                <div class="confidence-fill" id="confidenceFill" style="width: 0%"></div>
+                            </div>
+                        </div>
+
+                        <div class="disease-description" id="diseaseDescription">
+                            <p>-</p>
+                        </div>
+                    </div>
+
+                    <div class="top-predictions">
+                        <h4>En Olası 3 Tahmin:</h4>
+                        <div class="predictions-list" id="predictionsList">
+                            <!-- Dinamik olarak doldurulacak -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Info Section -->
+            <section class="info-section">
+                <div class="card">
+                    <h2 class="card-title">ℹ️ Sistem Hakkında</h2>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <h4>🎯 Tespit Edilebilen Hastalıklar</h4>
+                            <ul>
+                                <li>Diyabetik Retinopati</li>
+                                <li>Glokom</li>
+                                <li>Retina Dekolmanı</li>
+                                <li>Maküler Skar</li>
+                                <li>Disk Ödemesi</li>
+                                <li>Miyopi</li>
+                                <li>Pterjium</li>
+                                <li>Santral Seröz Korioretinopati</li>
+                                <li>Retinitis Pigmentosa</li>
+                                <li>Sağlıklı Göz</li>
+                            </ul>
+                        </div>
+                        <div class="info-item">
+                            <h4>🤖 Teknoloji</h4>
+                            <p>
+                                Bu sistem, derin öğrenme ve transfer learning teknikleri kullanılarak 
+                                geliştirilmiştir. EfficientNetB0 mimarisi ile eğitilmiş CNN modeli, 
+                                fundus görüntülerini analiz ederek hastalık tespiti yapar.
+                            </p>
+                            <p class="warning">
+                                ⚠️ <strong>Önemli:</strong> Bu sistem bir karar destek aracıdır. 
+                                Kesin tanı için mutlaka bir göz hekimine başvurunuz.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2026 Göz Hastalığı Karar Destek Sistemi | Derin Öğrenme Projesi</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
