@@ -9,15 +9,7 @@ Fundus kamera görüntülerinden yapay zeka destekli göz hastalığı tespiti y
 ![Flask](https://img.shields.io/badge/Flask-2.3+-green.svg)
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-## 📊 Repository Bilgileri
 
-| Özellik | Değer |
-|---------|-------|
-| ⭐ **Stars** | 0 |
-| 🔱 **Forks** | 0 |
-| 👁️ **Watching** | 0 |
-| 📦 **Releases** | No releases published |
-| 📦 **Packages** | No packages published |
 
 ### 💻 Kullanılan Diller
 - **Python** 83.3%
@@ -217,25 +209,11 @@ eye-disease-decision-support/
 
 ## 📈 Sonuçlar
 
-Model eğitimi tamamlandıktan sonra `results/` klasöründe aşağıdaki dosyalar oluşturulur:
+Model eğitimi tamamlandıktan sonra `results/` klasöründe aşağıdaki dosyalar oluşturulur
 
-### 📊 Görselleştirmeler
 
-<div align="center">
 
-#### Eğitim Performansı
-<img src="results/training_history.png" alt="Training History" width="700"/>
 
-#### Confusion Matrix
-<img src="results/confusion_matrix.png" alt="Confusion Matrix" width="700"/>
-
-#### ROC Eğrileri
-<img src="results/roc_curves.png" alt="ROC Curves" width="700"/>
-
-#### Veri Seti Dağılımı
-<img src="results/class_distribution.png" alt="Class Distribution" width="700"/>
-
-</div>
 
 ### 📋 Performans Metrikleri
 
